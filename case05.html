@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        section{
+            display: flex;
+            width: fit-content;
+            animation:slider ;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+        }
+
+        div{
+            width: 50vw;
+            height: 60vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        div:first-child{
+            background-image: url("assest/images/slide1.jpeg");
+        }
+
+        div:nth-child(2){
+            background-image: url("assest/images/slide2.jpeg");
+        }
+
+       div:nth-child(3){
+            background-image: url("assest/images/slide3.jpeg");
+        }
+
+        div:nth-child(4){
+            background-image: url("assest/images/slide4.jpeg");
+        }
+
+        main{
+            width: 50vw;
+            height: 50vh;
+            border: grey 5px solid;
+            overflow: hidden;
+        }
+
+        @keyframes slider  {
+            0%{
+                transform: translateX(0%);
+
+            }25%{
+                transform: translateX(-25%);
+                         }
+            50%{
+                transform: translateX(-50%);
+
+            }75% {
+             transform: translateX(-75%);
+                         }
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+
+  <main>
+      <section>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+      </section>
+  </main>
+
+
+
+
+</body>
+</html>
